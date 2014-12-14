@@ -5,16 +5,17 @@ body,
 }
 
 body {
-  background: #333;
-  color: #aaa;
-  text-shadow: rgba(0,0,0,1) 0 2px 2px;
-  margin: 0;
   font-family: $font-family-helvetica;
   font-size: 18px;
 }
 
-.splash-title {
-  font-family: $font-family-scifi;
-  font-size: 48px;
-  color: #ccc;
+.layout-splash {
+  background: #333;
+  color: #eee;
+
+  .splash-title {
+    font-family: $font-family-scifi;
+    font-size: 48px;
+    text-shadow: rgba(0,0,0,1) 0 2px 2px;
+  }
 }
