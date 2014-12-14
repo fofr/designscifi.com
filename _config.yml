@@ -4,6 +4,7 @@ description: Telling stories through interaction design
 baseurl: "" # the subpath of your site, e.g. /blog/
 url: "http://designscifi.com"
 include: [.htaccess]
+exclude: [Gemfile, Gemfile.lock, README.md]
 
 # Build settings
 markdown: kramdown
