@@ -7,3 +7,7 @@ include: [.htaccess]
 
 # Build settings
 markdown: kramdown
+
+assets:
+  css_compressor: sass
+  js_compressor: uglifier
