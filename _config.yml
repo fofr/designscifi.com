@@ -2,7 +2,7 @@
 title: Design Science Fiction
 description: Telling stories through interaction design
 baseurl: "" # the subpath of your site, e.g. /blog/
-url: "http://designscifi.com"
+url: "http://www.designscifi.com"
 include: [.htaccess]
 exclude: [Gemfile, Gemfile.lock, README.md]
 
