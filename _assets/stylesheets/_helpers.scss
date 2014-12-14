@@ -44,8 +44,12 @@ a.inherit:visited {
   height: 100%;
 }
 
-.scifi, .domus {
-  font-family: $font-family-scifi;
+.scifi-title, .domus {
+  font-family: $font-family-scifi-title;
+}
+
+.scifi-body, .automate {
+  font-family: $font-family-scifi-body;
 }
 
 /* Margin helpers
