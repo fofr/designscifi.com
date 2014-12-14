@@ -13,8 +13,8 @@
   @include add-bottom-margin($important);
 }
 
-@mixin add-top-margin($important: "") {
-  margin-top: $default-vertical-margin #{$important};
+@mixin add-top-margin($important: "", $int: 1) {
+  margin-top: ($default-vertical-margin * $int) #{$important};
 }
 
 @mixin add-bottom-margin($important: "") {

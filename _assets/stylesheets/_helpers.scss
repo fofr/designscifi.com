@@ -68,6 +68,10 @@ a.inherit:visited {
   @include add-top-margin('!important');
 }
 
+.double-top-margin {
+  @include add-top-margin('!important', 2);
+}
+
 .remove-top-margin {
   margin-top: 0 !important;
 }

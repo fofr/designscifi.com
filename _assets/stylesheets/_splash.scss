@@ -3,6 +3,12 @@
   color: #eee;
   font-family: $font-family-scifi-body;
 
+  .splash-content {
+    max-width: 500px;
+    margin: 0 auto;
+    @extend .clearfix;
+  }
+
   .splash-title {
     font-family: $font-family-scifi-title;
     font-size: 48px;
