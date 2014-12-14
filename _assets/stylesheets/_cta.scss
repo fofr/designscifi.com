@@ -1,0 +1,34 @@
+.cta {
+  display: inline-block;
+  border-radius: 50%;
+  background: #000;
+  border: 15px double #fff;
+  transition: transform 100ms;
+
+  &.cta-light {
+    background: #fff;
+    border-color: #000;
+  }
+
+  &:hover {
+    border-width: 10px;
+    transform: scale(1.4);
+  }
+
+  &:active {
+    transform: scale(0.8);
+  }
+}
+
+@mixin cta-size($size: 50px) {
+  width: $size;
+  height: $size;
+}
+
+.cta-default {
+  @include cta-size(50px);
+}
+
+.cta-big {
+  @include cta-size(100px);
+}

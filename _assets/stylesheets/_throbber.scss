@@ -1,8 +1,8 @@
 .throbber {
+  display: inline-block;
   border-radius: 50%;
   background: rgba(0,0,0,0.1);
   border-style: double;
-  position: relative;
   animation: throb 2s alternate infinite;
   transition: transform 100ms;
 
