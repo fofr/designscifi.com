@@ -10,12 +10,13 @@ body {
 }
 
 .layout-splash {
-  background: #333;
+  background: #111;
   color: #eee;
 
   .splash-title {
     font-family: $font-family-scifi;
     font-size: 48px;
     text-shadow: rgba(0,0,0,1) 0 2px 2px;
+    letter-spacing: 0.25em;
   }
 }
