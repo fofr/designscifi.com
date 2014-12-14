@@ -1,0 +1,103 @@
+/* ==========================================================================
+   Helpers
+   ========================================================================== */
+
+.relative {
+  position: relative;
+}
+
+.inline {
+  display: inline;
+}
+
+.inline-block {
+  display: inline-block;
+}
+
+.bold {
+  font-weight: bold;
+}
+
+.normal {
+  font-weight: normal;
+}
+
+.inherit,
+a.inherit,
+a.inherit:visited {
+  color: inherit;
+}
+
+.link-inherit,
+.link-inherit:visited {
+  color: inherit;
+  text-decoration: underline;
+}
+
+/* Margin helpers
+   ========================================================================== */
+
+.add-vertical-margins {
+  @include add-vertical-margins('!important');
+}
+
+.remove-vertical-margins {
+  margin-top: 0 !important;
+  margin-bottom: 0 !important
+}
+
+.add-top-margin {
+  @include add-top-margin('!important');
+}
+
+.remove-top-margin {
+  margin-top: 0 !important;
+}
+
+.add-bottom-margin {
+  @include add-bottom-margin('!important');
+}
+
+.remove-bottom-margin {
+  margin-bottom: 0 !important;
+}
+
+.add-right-margin {
+  @include add-right-margin('!important');
+}
+
+.add-left-margin {
+  @include add-left-margin('!important');
+}
+
+.add-label-margin {
+  @include add-label-margin;
+}
+
+/* Padding helpers
+   ========================================================================== */
+
+.add-vertical-padding {
+  @include add-vertical-padding('!important');
+}
+
+.remove-vertical-padding {
+  padding-top: 0 !important;
+  padding-bottom: 0 !important;
+}
+
+.add-top-padding {
+  @include add-top-padding('!important');
+}
+
+.remove-top-padding {
+  padding-top: 0 !important;
+}
+
+.add-bottom-padding {
+  @include add-bottom-padding('!important');
+}
+
+.remove-bottom-padding {
+  padding-bottom: 0 !important;
+}

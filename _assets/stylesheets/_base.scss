@@ -1,0 +1,36 @@
+html,
+body,
+.wrapper {
+  height: 100%;
+}
+
+body {
+  background: #333;
+  color: #aaa;
+  text-shadow: rgba(0,0,0,1) 0 2px 2px;
+  margin: 0;
+  font-family: $font-family-helvetica;
+  font-size: 18px;
+}
+
+.splash-title {
+  font-family: $font-family-scifi;
+  font-size: 48px;
+  color: #ccc;
+}
+
+.full-height {
+  height: 100%;
+}
+
+.vertical-middle {
+  position: relative;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  transform: translateY(-50%);
+  margin: 0;
+
+  // Prevent collapsing margins from creating a page that scrolls
+  padding: 1px 0;
+}

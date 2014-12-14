@@ -1,0 +1,17 @@
+/* ==========================================================================
+   Fonts
+   ========================================================================== */
+
+$font-family-helvetica: "Helvetica Neue", Arial, sans-serif;
+$font-family-scifi: "jaf-domus-titling-web", $font-family-helvetica;
+
+/* ==========================================================================
+   Alignment
+   ========================================================================== */
+
+$default-vertical-margin:   $line-height-computed;
+$default-vertical-padding:  $default-vertical-margin;
+$default-horizontal-margin: $grid-gutter-width / 3;
+
+// Simulate bootstrap labels spacing (no built-in variable for this)
+$default-label-margin: 5px;
