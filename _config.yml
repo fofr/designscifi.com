@@ -1,0 +1,14 @@
+# Site settings
+title: Design Science Fiction
+description: Telling stories through interaction design
+baseurl: "" # the subpath of your site, e.g. /blog/
+url: "http://designscifi.com"
+include: [.htaccess]
+exclude: [Gemfile, Gemfile.lock, README.md]
+
+# Build settings
+markdown: kramdown
+
+assets:
+  css_compressor: sass
+  js_compressor: uglifier
