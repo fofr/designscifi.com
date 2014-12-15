@@ -1,0 +1,79 @@
+.throbber {
+  display: inline-block;
+  border-radius: 50%;
+  background: rgba(0,0,0,0.1);
+  border-style: double;
+  animation: throb 2s alternate infinite;
+  transition: transform 100ms;
+
+  &.throbber-light {
+    background: rgba(255,255,255,0.3);
+    animation-name: throb-light;
+  }
+
+  &:hover {
+    background: rgba(0,0,0,0.3);
+    border-style: solid;
+    animation: end-throb 1s;
+    animation-fill-mode: forwards;
+    transform: scale(1.4);
+  }
+
+  &:hover.throbber-light {
+    background: rgba(255,255,255,0.5);
+    animation-name: end-throb-light;
+  }
+}
+
+@mixin throbber-size($size: 30px) {
+  width: $size;
+  height: $size;
+}
+
+.throbber-default {
+  @include throbber-size(30px);
+}
+
+.throbber-big {
+  @include throbber-size(50px);
+}
+
+@mixin throb-frames($color: 0) {
+  from, 75% {
+    border-width: 15px;
+    border-color: rgba($color,$color,$color,0);
+  }
+
+  to {
+    border-width: 7px;
+    border-color: rgba($color,$color,$color,.2);
+  }
+}
+
+@keyframes throb {
+  @include throb-frames(0);
+}
+
+@keyframes throb-light {
+  @include throb-frames(255);
+}
+
+@mixin end-throb-frames($color: 0) {
+  from {
+    border-width: 3px;
+    border-color: rgba($color,$color,$color,.5);
+  }
+
+  to, 25% {
+    border-width: 10px;
+    border-color: rgba($color,$color,$color,0);
+  }
+}
+
+@keyframes end-throb {
+  @include end-throb-frames(0);
+}
+
+@keyframes end-throb-light {
+  @include end-throb-frames(255);
+}

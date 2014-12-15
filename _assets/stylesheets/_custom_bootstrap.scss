@@ -1,0 +1,12 @@
+h1, h2, h3 {
+  margin-top: $default-vertical-margin * 2;
+  margin-bottom: $default-vertical-margin;
+}
+
+.page-header {
+  border-width: 5px;
+
+  .page-title {
+    margin-bottom: 0;
+  }
+}

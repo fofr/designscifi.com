@@ -5,16 +5,19 @@ body,
 }
 
 body {
-  background: #333;
-  color: #aaa;
-  text-shadow: rgba(0,0,0,1) 0 2px 2px;
-  margin: 0;
   font-family: $font-family-helvetica;
   font-size: 18px;
 }
 
-.splash-title {
-  font-family: $font-family-scifi;
-  font-size: 48px;
-  color: #ccc;
+.table {
+  border: 5px solid #ddd;
+}
+
+.table thead tr {
+  background: #eee;
+  font-weight: bold;
+
+  th {
+    @include add-top-padding('', 2);
+  }
 }

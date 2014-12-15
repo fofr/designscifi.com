@@ -1,14 +1,6 @@
-@mixin border-box {
-  -webkit-box-sizing: border-box;
-  -moz-box-sizing: border-box;
-  box-sizing: border-box;
-}
-
 @mixin vertical-middle {
   position: relative;
   top: 50%;
-  -webkit-transform: translateY(-50%);
-  -ms-transform: translateY(-50%);
   transform: translateY(-50%);
 }
 
@@ -16,25 +8,25 @@
    Margin mixins
    ========================================================================== */
 
-@mixin add-vertical-margins($important: "") {
-  @include add-top-margin($important);
-  @include add-bottom-margin($important);
+@mixin add-vertical-margins($important: "", $int: 1) {
+  @include add-top-margin($important, $int);
+  @include add-bottom-margin($important, $int);
 }
 
-@mixin add-top-margin($important: "") {
-  margin-top: $default-vertical-margin #{$important};
+@mixin add-top-margin($important: "", $int: 1) {
+  margin-top: ($default-vertical-margin * $int) #{$important};
 }
 
-@mixin add-bottom-margin($important: "") {
-  margin-bottom: $default-vertical-margin #{$important};
+@mixin add-bottom-margin($important: "", $int: 1) {
+  margin-bottom: ($default-vertical-margin * $int) #{$important};
 }
 
-@mixin add-right-margin($important: "") {
-  margin-right: $default-horizontal-margin #{$important};
+@mixin add-right-margin($important: "", $int: 1) {
+  margin-right: ($default-horizontal-margin * $int) #{$important};
 }
 
-@mixin add-left-margin($important: "") {
-  margin-left: $default-horizontal-margin #{$important};
+@mixin add-left-margin($important: "", $int: 1) {
+  margin-left: ($default-horizontal-margin * $int) #{$important};
 }
 
 @mixin add-label-margin {
@@ -45,15 +37,15 @@
    Padding mixins
    ========================================================================== */
 
-@mixin add-vertical-padding($important: "") {
-  @include add-top-padding($important);
-  @include add-bottom-padding($important);
+@mixin add-vertical-padding($important: "", $int: 1) {
+  @include add-top-padding($important, $int);
+  @include add-bottom-padding($important, $int);
 }
 
-@mixin add-top-padding($important: "") {
-  padding-top: $default-vertical-padding #{$important};
+@mixin add-top-padding($important: "", $int: 1) {
+  padding-top: ($default-vertical-padding * $int) #{$important};
 }
 
-@mixin add-bottom-padding($important: "") {
-  padding-bottom: $default-vertical-padding #{$important};
+@mixin add-bottom-padding($important: "", $int: 1) {
+  padding-bottom: ($default-vertical-padding * $int) #{$important};
 }

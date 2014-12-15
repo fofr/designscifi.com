@@ -44,6 +44,14 @@ a.inherit:visited {
   height: 100%;
 }
 
+.scifi-title, .domus {
+  font-family: $font-family-scifi-title;
+}
+
+.scifi-body, .automate {
+  font-family: $font-family-scifi-body;
+}
+
 /* Margin helpers
    ========================================================================== */
 
@@ -58,6 +66,10 @@ a.inherit:visited {
 
 .add-top-margin {
   @include add-top-margin('!important');
+}
+
+.double-top-margin {
+  @include add-top-margin('!important', 2);
 }
 
 .remove-top-margin {
