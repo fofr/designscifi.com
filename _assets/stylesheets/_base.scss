@@ -8,3 +8,16 @@ body {
   font-family: $font-family-helvetica;
   font-size: 18px;
 }
+
+.table {
+  border: 5px solid #ddd;
+}
+
+.table thead tr {
+  background: #eee;
+  font-weight: bold;
+
+  th {
+    @include add-top-padding('', 2);
+  }
+}
