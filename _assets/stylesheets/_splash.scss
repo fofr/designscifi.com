@@ -1,17 +1,22 @@
-.layout-splash {
-  background: #111;
-  color: #eee;
-  font-family: $font-family-scifi-body;
+.splash-content {
+  max-width: 500px;
+  margin: 0 auto;
+  @extend .clearfix;
+}
 
-  .splash-content {
-    max-width: 500px;
-    margin: 0 auto;
-    @extend .clearfix;
+.splash-title {
+  font-size: 48px;
+}
+
+.theme-default {
+  .page-type-splash {
+    background: #111;
+    color: #eee;
+    font-family: $font-family-scifi-body;
   }
 
   .splash-title {
     font-family: $font-family-scifi-title;
-    font-size: 48px;
     text-shadow: rgba(0,0,0,1) 0 2px 2px;
     letter-spacing: 0.25em;
   }
