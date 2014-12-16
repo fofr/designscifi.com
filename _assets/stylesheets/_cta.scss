@@ -1,6 +1,8 @@
 .cta {
+  font-size: 0;
+  line-height: 0;
+  color: transparent;
   display: inline-block;
-  border-radius: 50%;
   background: #000;
   border: 15px double #fff;
   transition: transform 100ms;
@@ -20,15 +22,10 @@
   }
 }
 
-@mixin cta-size($size: 50px) {
-  width: $size;
-  height: $size;
-}
-
 .cta-default {
-  @include cta-size(50px);
+  @include circle(50px);
 }
 
 .cta-big {
-  @include cta-size(100px);
+  @include circle(100px);
 }

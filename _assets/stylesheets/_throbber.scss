@@ -1,6 +1,5 @@
 .throbber {
   display: inline-block;
-  border-radius: 50%;
   background: rgba(0,0,0,0.1);
   border-style: double;
   animation: throb 2s alternate infinite;
@@ -25,17 +24,12 @@
   }
 }
 
-@mixin throbber-size($size: 30px) {
-  width: $size;
-  height: $size;
-}
-
 .throbber-default {
-  @include throbber-size(30px);
+  @include circle(30px);
 }
 
 .throbber-big {
-  @include throbber-size(50px);
+  @include circle(50px);
 }
 
 @mixin throb-frames($color: 0) {
