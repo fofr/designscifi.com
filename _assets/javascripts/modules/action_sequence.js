@@ -53,15 +53,24 @@
 
       function message() {
         var message = currentAction.html(),
+            delay = currentAction.data('delay') || 1000,
             duration = currentAction.data('writing-duration') || 1000;
 
         currentAction.text('…');
-        currentAction.fadeIn(200, function() {
-          setTimeout(function() {
-            currentAction.html(message);
-            element.trigger('action-ended');
-          }, duration);
-        });
+
+        setTimeout(function() {
+          fadeInMessage();
+        }, delay)
+
+        function fadeInMessage() {
+          currentAction.fadeIn(200, function() {
+            setTimeout(function() {
+              currentAction.html(message);
+              //window.scrollTo(0,document.body.scrollHeight);
+              element.trigger('action-ended');
+            }, duration);
+          });
+        }
       }
     };
   };
