@@ -1,0 +1,26 @@
+.verify {
+  @include circle(300px);
+  border: 20px solid #ddd;
+  margin: 0 auto;
+  //animation: verifying 1s;
+  //animation-fill-mode: forwards;
+  transition: border-color 1s;
+  background-image: image-url('fingerprint.png');
+  background-size: 65%;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.verify:hover {
+  border-color: #aaa;
+}
+
+@keyframes verifying {
+  from {
+    border-color: #ddd;
+  }
+
+  to {
+    border-color: #8DCF90;
+  }
+}
