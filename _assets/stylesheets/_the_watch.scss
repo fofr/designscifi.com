@@ -1,8 +1,20 @@
 .theme-the-watch {
 
   body {
-    background: #000;
+    background: #111;
     color: #fff;
   }
 
+  .snowflake {
+    text-align: center;
+    font-size: 48px;
+    margin: 48px 0;
+  }
+
+  .credits {
+    text-align: center;
+    max-width: 300px;
+    margin: 48px auto 0;
+    padding-bottom: 48px;
+  }
 }

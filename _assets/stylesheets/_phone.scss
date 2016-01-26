@@ -4,17 +4,18 @@
   background: #fff;
   margin: 48px auto 12px;
   padding: 12px;
-  min-height: 600px;
+  min-height: 200px;
   position: relative;
   border: 10px solid #ddd;
+  transition: border-color 500ms, background-color 500ms;
 
   @media (max-width: 700px) {
     margin-top: 148px;
   }
 
   @media (max-width: 450px) {
-    margin-left: 20px;
-    margin-right: 20px;
+    margin-left: 10px;
+    margin-right: 10px;
     border-width: 5px;
   }
 
@@ -43,9 +44,13 @@
   %phone-message {
     border-radius: 3px;
     padding: 5px 10px;
-    width: 60%;
+    max-width: 60%;
     clear: both;
     margin-bottom: 12px;
+
+    @media (max-width: 450px) {
+      max-width: 80%;
+    }
   }
 
   .phone-message-sender {
@@ -63,4 +68,8 @@
     text-align: right;
   }
 
+  &.phone-unfocused {
+    border-color: #fff;
+    background: #000;
+  }
 }
