@@ -1,5 +1,8 @@
 Options -Indexes
 
+RewriteEngine On
+RewriteRule ^$ /the-watch/ [R=302,NC,L]
+
 AddCharset UTF-8 .html
 
 AddOutputFilterByType DEFLATE text/plain
